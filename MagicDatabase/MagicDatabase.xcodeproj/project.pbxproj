@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E24EB0E5224822CA0005EC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0E4224822CA0005EC62 /* AppDelegate.swift */; };
+		E24EB0E7224822CA0005EC62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0E6224822CA0005EC62 /* ViewController.swift */; };
+		E24EB0EA224822CA0005EC62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24EB0E8224822CA0005EC62 /* Main.storyboard */; };
+		E24EB0ED224822CA0005EC62 /* MagicDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0EB224822CA0005EC62 /* MagicDatabase.xcdatamodeld */; };
+		E24EB0EF224822CD0005EC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24EB0EE224822CD0005EC62 /* Assets.xcassets */; };
+		E24EB0F2224822CD0005EC62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24EB0F0224822CD0005EC62 /* LaunchScreen.storyboard */; };
+		E24EB0FD224822CD0005EC62 /* MagicDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0FC224822CD0005EC62 /* MagicDatabaseTests.swift */; };
+		E24EB108224822CD0005EC62 /* MagicDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB107224822CD0005EC62 /* MagicDatabaseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E24EB0F9224822CD0005EC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E24EB0D9224822CA0005EC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E24EB0E0224822CA0005EC62;
+			remoteInfo = MagicDatabase;
+		};
+		E24EB104224822CD0005EC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E24EB0D9224822CA0005EC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E24EB0E0224822CA0005EC62;
+			remoteInfo = MagicDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E24EB0E1224822CA0005EC62 /* MagicDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24EB0E4224822CA0005EC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E24EB0E6224822CA0005EC62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E24EB0E9224822CA0005EC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E24EB0EC224822CA0005EC62 /* MagicDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicDatabase.xcdatamodel; sourceTree = "<group>"; };
+		E24EB0EE224822CD0005EC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E24EB0F1224822CD0005EC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E24EB0F3224822CD0005EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24EB0F8224822CD0005EC62 /* MagicDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24EB0FC224822CD0005EC62 /* MagicDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicDatabaseTests.swift; sourceTree = "<group>"; };
+		E24EB0FE224822CD0005EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24EB103224822CD0005EC62 /* MagicDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24EB107224822CD0005EC62 /* MagicDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicDatabaseUITests.swift; sourceTree = "<group>"; };
+		E24EB109224822CD0005EC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E24EB0DE224822CA0005EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB0F5224822CD0005EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB100224822CD0005EC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E24EB0D8224822CA0005EC62 = {
+			isa = PBXGroup;
+			children = (
+				E24EB0E3224822CA0005EC62 /* MagicDatabase */,
+				E24EB0FB224822CD0005EC62 /* MagicDatabaseTests */,
+				E24EB106224822CD0005EC62 /* MagicDatabaseUITests */,
+				E24EB0E2224822CA0005EC62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E24EB0E2224822CA0005EC62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0E1224822CA0005EC62 /* MagicDatabase.app */,
+				E24EB0F8224822CD0005EC62 /* MagicDatabaseTests.xctest */,
+				E24EB103224822CD0005EC62 /* MagicDatabaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E24EB0E3224822CA0005EC62 /* MagicDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0E4224822CA0005EC62 /* AppDelegate.swift */,
+				E24EB1172248230A0005EC62 /* Sources */,
+				E24EB116224822F90005EC62 /* Resources */,
+				E24EB115224822E20005EC62 /* Storage */,
+				E24EB118224823200005EC62 /* Misc */,
+			);
+			path = MagicDatabase;
+			sourceTree = "<group>";
+		};
+		E24EB0FB224822CD0005EC62 /* MagicDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0FC224822CD0005EC62 /* MagicDatabaseTests.swift */,
+				E24EB0FE224822CD0005EC62 /* Info.plist */,
+			);
+			path = MagicDatabaseTests;
+			sourceTree = "<group>";
+		};
+		E24EB106224822CD0005EC62 /* MagicDatabaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB107224822CD0005EC62 /* MagicDatabaseUITests.swift */,
+				E24EB109224822CD0005EC62 /* Info.plist */,
+			);
+			path = MagicDatabaseUITests;
+			sourceTree = "<group>";
+		};
+		E24EB115224822E20005EC62 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0EB224822CA0005EC62 /* MagicDatabase.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		E24EB116224822F90005EC62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0EE224822CD0005EC62 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E24EB1172248230A0005EC62 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0E8224822CA0005EC62 /* Main.storyboard */,
+				E24EB0E6224822CA0005EC62 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E24EB118224823200005EC62 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E24EB0F0224822CD0005EC62 /* LaunchScreen.storyboard */,
+				E24EB0F3224822CD0005EC62 /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E24EB0E0224822CA0005EC62 /* MagicDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24EB10C224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabase" */;
+			buildPhases = (
+				E24EB0DD224822CA0005EC62 /* Sources */,
+				E24EB0DE224822CA0005EC62 /* Frameworks */,
+				E24EB0DF224822CA0005EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicDatabase;
+			productName = MagicDatabase;
+			productReference = E24EB0E1224822CA0005EC62 /* MagicDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E24EB0F7224822CD0005EC62 /* MagicDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24EB10F224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabaseTests" */;
+			buildPhases = (
+				E24EB0F4224822CD0005EC62 /* Sources */,
+				E24EB0F5224822CD0005EC62 /* Frameworks */,
+				E24EB0F6224822CD0005EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24EB0FA224822CD0005EC62 /* PBXTargetDependency */,
+			);
+			name = MagicDatabaseTests;
+			productName = MagicDatabaseTests;
+			productReference = E24EB0F8224822CD0005EC62 /* MagicDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E24EB102224822CD0005EC62 /* MagicDatabaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24EB112224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabaseUITests" */;
+			buildPhases = (
+				E24EB0FF224822CD0005EC62 /* Sources */,
+				E24EB100224822CD0005EC62 /* Frameworks */,
+				E24EB101224822CD0005EC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24EB105224822CD0005EC62 /* PBXTargetDependency */,
+			);
+			name = MagicDatabaseUITests;
+			productName = MagicDatabaseUITests;
+			productReference = E24EB103224822CD0005EC62 /* MagicDatabaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E24EB0D9224822CA0005EC62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Momo;
+				TargetAttributes = {
+					E24EB0E0224822CA0005EC62 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E24EB0F7224822CD0005EC62 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E24EB0E0224822CA0005EC62;
+					};
+					E24EB102224822CD0005EC62 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E24EB0E0224822CA0005EC62;
+					};
+				};
+			};
+			buildConfigurationList = E24EB0DC224822CA0005EC62 /* Build configuration list for PBXProject "MagicDatabase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E24EB0D8224822CA0005EC62;
+			productRefGroup = E24EB0E2224822CA0005EC62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E24EB0E0224822CA0005EC62 /* MagicDatabase */,
+				E24EB0F7224822CD0005EC62 /* MagicDatabaseTests */,
+				E24EB102224822CD0005EC62 /* MagicDatabaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E24EB0DF224822CA0005EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24EB0F2224822CD0005EC62 /* LaunchScreen.storyboard in Resources */,
+				E24EB0EF224822CD0005EC62 /* Assets.xcassets in Resources */,
+				E24EB0EA224822CA0005EC62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB0F6224822CD0005EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB101224822CD0005EC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E24EB0DD224822CA0005EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24EB0E7224822CA0005EC62 /* ViewController.swift in Sources */,
+				E24EB0ED224822CA0005EC62 /* MagicDatabase.xcdatamodeld in Sources */,
+				E24EB0E5224822CA0005EC62 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB0F4224822CD0005EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24EB0FD224822CD0005EC62 /* MagicDatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24EB0FF224822CD0005EC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24EB108224822CD0005EC62 /* MagicDatabaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E24EB0FA224822CD0005EC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E24EB0E0224822CA0005EC62 /* MagicDatabase */;
+			targetProxy = E24EB0F9224822CD0005EC62 /* PBXContainerItemProxy */;
+		};
+		E24EB105224822CD0005EC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E24EB0E0224822CA0005EC62 /* MagicDatabase */;
+			targetProxy = E24EB104224822CD0005EC62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E24EB0E8224822CA0005EC62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24EB0E9224822CA0005EC62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E24EB0F0224822CD0005EC62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E24EB0F1224822CD0005EC62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E24EB10A224822CD0005EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E24EB10B224822CD0005EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E24EB10D224822CD0005EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E24EB10E224822CD0005EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E24EB110224822CD0005EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicDatabase.app/MagicDatabase";
+			};
+			name = Debug;
+		};
+		E24EB111224822CD0005EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicDatabase.app/MagicDatabase";
+			};
+			name = Release;
+		};
+		E24EB113224822CD0005EC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicDatabase;
+			};
+			name = Debug;
+		};
+		E24EB114224822CD0005EC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				INFOPLIST_FILE = MagicDatabaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Momo.MagicDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicDatabase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E24EB0DC224822CA0005EC62 /* Build configuration list for PBXProject "MagicDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24EB10A224822CD0005EC62 /* Debug */,
+				E24EB10B224822CD0005EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E24EB10C224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24EB10D224822CD0005EC62 /* Debug */,
+				E24EB10E224822CD0005EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E24EB10F224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24EB110224822CD0005EC62 /* Debug */,
+				E24EB111224822CD0005EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E24EB112224822CD0005EC62 /* Build configuration list for PBXNativeTarget "MagicDatabaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24EB113224822CD0005EC62 /* Debug */,
+				E24EB114224822CD0005EC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E24EB0EB224822CA0005EC62 /* MagicDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E24EB0EC224822CA0005EC62 /* MagicDatabase.xcdatamodel */,
+			);
+			currentVersion = E24EB0EC224822CA0005EC62 /* MagicDatabase.xcdatamodel */;
+			path = MagicDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E24EB0D9224822CA0005EC62 /* Project object */;
+}
