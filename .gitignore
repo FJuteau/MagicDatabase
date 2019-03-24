@@ -1,0 +1,28 @@
+## Various settings
+.DS_STORE
+xcuserdata/
+*.pbxuser
+MagicDatabase/MagicDatabase.xcodeproj/project.xcworkspace/xcuserdata/francoisjuteau.xcuserdatad/UserInterfaceState.xcuserstate
+
+## Build generated
+DerivedData/
+
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspace
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# Carthage
+#
+MagicDatabase/Carthage/Checkouts
+MagicDatabase/Carthage/Build/Mac
+MagicDatabase/Carthage/Build/tvOS
+*.bcsymbolmap
+MagicDatabase/Carthage/Build/*.version
+
