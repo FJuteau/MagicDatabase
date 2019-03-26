@@ -11,6 +11,7 @@
 		6E3D3A0922491E9400EAACE3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D3A0822491E9400EAACE3 /* Card.swift */; };
 		6E3D3A0B2249225000EAACE3 /* LayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D3A0A2249225000EAACE3 /* LayoutConstraintExtension.swift */; };
 		6E3D3A0D2249233300EAACE3 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D3A0C2249233300EAACE3 /* CardCell.swift */; };
+		E2184D27224A2D0800CA5D5A /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2184D26224A2D0800CA5D5A /* ImageFetcher.swift */; };
 		E24EB0E5224822CA0005EC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0E4224822CA0005EC62 /* AppDelegate.swift */; };
 		E24EB0E7224822CA0005EC62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24EB0E6224822CA0005EC62 /* ViewController.swift */; };
 		E24EB0EA224822CA0005EC62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24EB0E8224822CA0005EC62 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		6E3D3A0822491E9400EAACE3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		6E3D3A0A2249225000EAACE3 /* LayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		6E3D3A0C2249233300EAACE3 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		E2184D26224A2D0800CA5D5A /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		E24EB0E1224822CA0005EC62 /* MagicDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24EB0E4224822CA0005EC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24EB0E6224822CA0005EC62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 				6E3D3A0822491E9400EAACE3 /* Card.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		E2184D25224A2CF600CA5D5A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E2184D26224A2D0800CA5D5A /* ImageFetcher.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		E24EB0D8224822CA0005EC62 = {
@@ -168,6 +178,7 @@
 			children = (
 				E24EB11A224829F30005EC62 /* Network */,
 				E24EB119224823FD0005EC62 /* Search */,
+				E2184D25224A2CF600CA5D5A /* Tools */,
 				E24EB0E8224822CA0005EC62 /* Main.storyboard */,
 			);
 			path = Sources;
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24EB0E7224822CA0005EC62 /* ViewController.swift in Sources */,
+				E2184D27224A2D0800CA5D5A /* ImageFetcher.swift in Sources */,
 				E24EB0ED224822CA0005EC62 /* MagicDatabase.xcdatamodeld in Sources */,
 				6E3D3A0B2249225000EAACE3 /* LayoutConstraintExtension.swift in Sources */,
 				6E3D3A0D2249233300EAACE3 /* CardCell.swift in Sources */,
