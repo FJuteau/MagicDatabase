@@ -14,6 +14,7 @@ class DetailScrollView: UIScrollView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupScrollView()
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -21,6 +22,12 @@ class DetailScrollView: UIScrollView {
     
     func setupScrollView() {
         
+        addSubview(cardImg)
+        cardImg.image = UIImage(named: "card_back")
+        cardImg.contentMode = .scaleToFill
+        let value = frame.width / 4
+        cardImg.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 40, left: value, bottom: 40, right: value))
+        cardImg.heightAnchor.constraint(equalToConstant: value * 2)
     }
     
 }
