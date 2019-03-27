@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
 
     let network = Network()
+    let imageFetcher = ImageFetcher(dataFetcher: ImageDataFetcher())
+    
     let cellId = "cellId"
     var cards = [CardsResponse]()
     
@@ -49,8 +51,22 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CardCell
         
-        
+        if let urlString = cards[indexPath.item].imageUrl, let url = URL(string: urlString){
+            
+            imageFetcher.getImage(from: url) { (fetchedImage) in
+                cell.imageView.image = fetchedImage
+            }
+        }
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+        let detailedCardVC = DetailedCardViewController()
+        let cardId = cards[indexPath.item].id 
+        detailedCardVC.cardId = cardId
+        self.navigationController?.pushViewController(detailedCardVC, animated: true)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
