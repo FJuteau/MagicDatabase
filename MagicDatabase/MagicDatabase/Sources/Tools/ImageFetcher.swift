@@ -10,6 +10,12 @@ import UIKit
 
 final class ImageFetcher {
 
+    let dataFetcher: DataFetcherProtocol
+    
+    init(dataFetcher: DataFetcherProtocol) {
+        self.dataFetcher = dataFetcher
+    }
+    
     /// Fetch Image from network
     ///
     /// - Parameters:
@@ -17,5 +23,26 @@ final class ImageFetcher {
     ///   - completionHandler: returns a placeholder image while loading, then returns the fetched image
     func getImage(from url: URL, completionHandler: ((UIImage) -> Void)) {
 
+        dataFetcher.fetchData(from: url) { data in
+            guard let image = UIImage(data: data) else { return }
+            
+            completionHandler(image)
+        }
+    }
+}
+
+protocol DataFetcherProtocol {
+    func fetchData(from url: URL, completionHandler: ((Data) -> Void))
+}
+
+final class ImageDataFetcher: DataFetcherProtocol {
+    func fetchData(from url: URL, completionHandler: ((Data) -> Void)) {
+        do {
+            let data = try Data(contentsOf: url)
+            
+            completionHandler(data)
+        } catch {
+            print("no data")
+        }
     }
 }

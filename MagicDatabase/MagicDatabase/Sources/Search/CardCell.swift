@@ -15,21 +15,19 @@ class CardCell: UICollectionViewCell{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = .clear
         addSubview(imageView)
-        
         imageView.fillSuperview()
         imageView.image = UIImage(named: "no_image")
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         
     }
     override func layoutSubviews() {
-        layer.cornerRadius = self.frame.width * 0.1
+        layer.cornerRadius = self.frame.width * 0.07
         layer.borderColor = UIColor.black.cgColor
-        layer.borderWidth = 1
+        layer.borderWidth = 5
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
