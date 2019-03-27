@@ -18,7 +18,7 @@ class CardCell: UICollectionViewCell{
         backgroundColor = .clear
         addSubview(imageView)
         imageView.fillSuperview()
-        imageView.image = UIImage(named: "no_image")
+        imageView.image = UIImage(named: "card_back")
         imageView.contentMode = .scaleToFill
         
     }

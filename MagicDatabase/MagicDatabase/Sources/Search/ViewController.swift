@@ -57,10 +57,16 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 cell.imageView.image = fetchedImage
             }
         }
-        
-        
-        
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+        let detailedCardVC = DetailedCardViewController()
+        let cardId = cards[indexPath.item].id 
+        detailedCardVC.cardId = cardId
+        self.navigationController?.pushViewController(detailedCardVC, animated: true)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let layout = UICollectionViewFlowLayout()
-        window?.rootViewController = ViewController(collectionViewLayout: layout)
+        window?.rootViewController = UINavigationController(rootViewController: ViewController(collectionViewLayout: layout)) 
         
         return true
     }
