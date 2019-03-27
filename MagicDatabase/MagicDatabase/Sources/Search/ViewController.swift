@@ -23,7 +23,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards", queryItems: nil, parameters: nil, securityKey: nil)
         
         network.request(query: query) { (cardsResponse: CardsBaseReponse) in
-            print("cardsResponse \(cardsResponse)")
+//            print("cardsResponse \(cardsResponse)")
             cardsResponse.cards.forEach({ (card) in
                 self.cards.append(card)
                 DispatchQueue.main.async {
