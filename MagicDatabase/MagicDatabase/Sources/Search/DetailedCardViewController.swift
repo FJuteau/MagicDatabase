@@ -10,7 +10,7 @@ import UIKit
 
 class DetailedCardViewController: UIViewController {
 
-    let scrollView = UIScrollView()
+    let scrollView = DetailScrollView()
     
     let network = Network()
     
@@ -20,10 +20,12 @@ class DetailedCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/someIDs", queryItems: nil, parameters: nil, securityKey: nil)
-//        network.request(query: query) { (someResponse: SomeResponse) in
-////            codo
-//        }
+        guard let id = cardId else { return }
+        let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards/\(id)", queryItems: nil, parameters: nil, securityKey: nil)
+        network.request(query: query) { (dCardResponse: DetailedCardResponse) in
+
+            print(dCardResponse)
+        }
         setupUI()
     }
   
