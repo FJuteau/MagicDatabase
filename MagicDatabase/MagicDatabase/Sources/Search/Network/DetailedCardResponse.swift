@@ -15,14 +15,14 @@ struct CardDetail: Codable {
     let name: String
     let imageUrl: String?
     let id: String
-    let type: String
-    let manaCost: String
-    let rarity: String
-    let set: String
-    let setName: String
-    let number: String
-    let power: String
-    let toughness: String
+    let type: String?
+    let manaCost: String?
+    let rarity: String?
+    let set: String?
+    let setName: String?
+    let number: String?
+    let power: String?
+    let toughness: String?
     let originalText: String?
     let legalities: [Legalities]
 }

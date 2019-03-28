@@ -65,8 +65,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let detailedCardVC = DetailedCardViewController()
         let cardId = cards[indexPath.item].id
         let name = cards[indexPath.item].name
+        let imageUrl = cards[indexPath.item].imageUrl
         detailedCardVC.cardId = cardId
         detailedCardVC.cardName = name
+        detailedCardVC.cardImageUrl = imageUrl
         self.navigationController?.pushViewController(detailedCardVC, animated: true)
         
     }

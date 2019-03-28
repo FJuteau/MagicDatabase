@@ -17,6 +17,7 @@ class DetailedCardViewController: UIViewController {
     
     var cardId: String?
     var cardName: String?
+    var cardImageUrl: String?
     
     var card: DetailedCardResponse?
     
@@ -29,17 +30,17 @@ class DetailedCardViewController: UIViewController {
         guard let id = cardId else { return }
         let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards/\(id)", queryItems: nil, parameters: nil, securityKey: nil)
         network.request(query: query) { (dCardResponse: DetailedCardResponse) in
-
-            if let urlString = dCardResponse.card.imageUrl, let url = URL(string: urlString){
-                self.imageFetcher.getImage(from: url
-                    , completionHandler: { (image) in
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                            self.detailView.flipCard(image: image)
-                        })
-                        
+            
+            if let urlString = self.cardImageUrl, let url = URL(string: urlString){
+                
+                self.imageFetcher.getImage(from: url, completionHandler: { (image) in
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                        self.detailView.flipCard(image: image)
+                    })
                 })
             }
+            
             
         }
         
@@ -63,4 +64,7 @@ class DetailedCardViewController: UIViewController {
         detailView.setupView(imageSize: imageSize)
     }
 
+    deinit {
+        print("deinit success")
+    }
 }
