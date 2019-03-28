@@ -43,4 +43,10 @@ class DetailView: UIView {
         
     }
     
+    func flipCard(image: UIImage) {
+        cardImg.image = image
+        UIView.transition(with: cardImg, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
+    }
+    
+    
 }

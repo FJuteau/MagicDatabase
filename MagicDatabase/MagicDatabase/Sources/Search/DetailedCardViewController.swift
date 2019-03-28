@@ -13,6 +13,7 @@ class DetailedCardViewController: UIViewController {
     let detailView = DetailView()
     
     let network = Network()
+    let imageFetcher = ImageFetcher(dataFetcher: ImageDataFetcher())
     
     var cardId: String?
     var cardName: String?
@@ -29,9 +30,17 @@ class DetailedCardViewController: UIViewController {
         let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards/\(id)", queryItems: nil, parameters: nil, securityKey: nil)
         network.request(query: query) { (dCardResponse: DetailedCardResponse) in
 
-            DispatchQueue.main.async {
-                
+            if let urlString = dCardResponse.card.imageUrl, let url = URL(string: urlString){
+                self.imageFetcher.getImage(from: url
+                    , completionHandler: { (image) in
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                            self.detailView.flipCard(image: image)
+                        })
+                        
+                })
             }
+            
         }
         
         
