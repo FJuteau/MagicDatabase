@@ -63,8 +63,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
         let detailedCardVC = DetailedCardViewController()
-        let cardId = cards[indexPath.item].id 
+        let cardId = cards[indexPath.item].id
+        let name = cards[indexPath.item].name
         detailedCardVC.cardId = cardId
+        detailedCardVC.cardName = name
         self.navigationController?.pushViewController(detailedCardVC, animated: true)
         
     }

@@ -10,37 +10,48 @@ import UIKit
 
 class DetailedCardViewController: UIViewController {
 
-    let scrollView = DetailScrollView()
+    let detailView = DetailView()
     
     let network = Network()
     
     var cardId: String?
+    var cardName: String?
+    
     var card: DetailedCardResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        self.setupUI()
+
         guard let id = cardId else { return }
-//        let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards/\(id)", queryItems: nil, parameters: nil, securityKey: nil)
-//        network.request(query: query) { (dCardResponse: DetailedCardResponse) in
-//
-//            self.setupUI(card: dCardResponse)
-//        }
+        let query = Query(method: .get, baseURL: BaseURL.mtg, path: "v1/cards/\(id)", queryItems: nil, parameters: nil, securityKey: nil)
+        network.request(query: query) { (dCardResponse: DetailedCardResponse) in
+
+            DispatchQueue.main.async {
+                
+            }
+        }
         
         
     }
   
-    func setupUI(card: DetailedCardResponse){
-        title = "Card Details"
+    func setupUI(){
+        if let cardName = cardName {
+            title = cardName
+        } else {
+            title = "Card Details"
+        }
         view.backgroundColor = .white
         
-        view.addSubview(scrollView)
-        scrollView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
-        scrollView.contentSize = CGSize(width: 0, height: 1000)
-//        let imageWidth = view.frame.width / 2
-//        let imageHeight = imageWidth + imageWidth * 0.5
-//        let imageSize = CGSize(width: imageWidth, height: imageHeight)
-//        scrollView.setupScrollView(imageSize: imageSize)
+        view.addSubview(detailView)
+        detailView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+        
+        let imageWidth = view.frame.width * 0.9
+        let imageHeight = imageWidth + imageWidth * 0.5
+        let imageSize = CGSize(width: imageWidth, height: imageHeight)
+        detailView.setupView(imageSize: imageSize)
     }
 
 }
