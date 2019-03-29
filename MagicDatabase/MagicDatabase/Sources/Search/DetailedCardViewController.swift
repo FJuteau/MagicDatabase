@@ -61,7 +61,7 @@ class DetailedCardViewController: UIViewController {
         let imageWidth = view.frame.width * 0.9
         let imageHeight = imageWidth + imageWidth * 0.5
         let imageSize = CGSize(width: imageWidth, height: imageHeight)
-        detailView.setupView(imageSize: imageSize)
+        detailView.setupView(imageSize: imageSize, supaViewFrame: view.frame)
     }
 
     deinit {
